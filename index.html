@@ -8,6 +8,64 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <title>Document</title>
+  <style>
+    .grid-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .img-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-container:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+
+    .img-container img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 200px;
+    }
+
+    .img-container p {
+      padding: 20px;
+      align-self: flex-end;
+      margin: 0;
+      text-align: center;
+    }
+
+    .background-blue {
+      background-color: #83a7bd;
+      color: white;
+    }
+
+    .background-yellow {
+      background-color: yellow;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .img-container:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .img-container img {
+        max-height: none;
+      }
+
+      .img-container p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
