@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/XanderUZZZER/testLocals#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "parcel": "^2.0.0-nightly.474",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   }
 }
