@@ -5,7 +5,7 @@ export const middleware1 = (storeApi) => (next) => (action) => {
   console.info('middelware 1, dispatching', action)
   let result = next(action)
   console.info('middelware 1, state after dispatching', storeApi.getState())
-  console.info('middelware 2, dispatched action', action)
+  console.info('middelware 1, dispatched action', action)
   return result
 }
 
